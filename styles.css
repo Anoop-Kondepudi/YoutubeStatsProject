@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -9,20 +8,23 @@ body {
 .slide {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Aligns content to the top */
     align-items: center;
-    height: 100vh;
+    height: auto; /* Adjusted height */
+    min-height: 100vh; /* Ensures content covers full height */
+    padding: 100px 20px; /* Equal padding at top and bottom */
+    position: relative;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 30px;
+    font-size: 18px;
     cursor: pointer;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 button:hover {
@@ -31,4 +33,73 @@ button:hover {
 
 .hidden {
     display: none;
+}
+
+.centered-content {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.centered-content p {
+    font-size: 20px; /* Increased font size for the Google Takeout text */
+    font-weight: bold; /* Added bold for emphasis */
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.step-image {
+    width: 450px; /* Increased size */
+    height: auto;
+    margin: 20px;
+}
+
+.content p {
+    font-size: 18px; /* Font size for text with image */
+    width: 450px;
+    margin: 20px;
+    text-align: left;
+}
+
+.content:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.summary {
+    width: 70%;
+    text-align: justify;
+    font-size: 18px; /* Font size for summary text */
+    margin: 30px 0;
+}
+
+a {
+    color: #0056b3; /* Changed color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px; /* Distance from top */
+    left: 20px;
+    background-color: #4CAF50; /* Changed background color to match */
+    color: white; /* Text color */
+    border: none; /* Removed border */
+    border-radius: 5px; /* Added border radius */
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Added shadow for visibility */
+}
+
+.back-button:hover {
+    background-color: #45a049; /* Changed hover color */
 }

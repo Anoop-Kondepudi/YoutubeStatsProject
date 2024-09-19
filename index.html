@@ -7,15 +7,46 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Slide 1: Welcome Page -->
     <div id="slide1" class="slide">
+        <button class="back-button hidden" id="backButton">Back</button> <!-- Back Button for Slide 1, hidden initially -->
         <h1>Welcome to the YouTube Stats Project</h1>
         <p>By: [Your Name Here]</p>
         <p>This project allows you to upload your YouTube statistics and provides insightful data about your time spent on the platform.</p>
         <button id="continueButton">Click to Continue</button>
     </div>
 
+    <!-- Slide 2: Step-by-Step Guide -->
     <div id="slide2" class="slide hidden">
-        <h1>Next Page</h1>
+        <button class="back-button" id="backButtonSlide2">Back</button> <!-- Back Button for Slide 2 -->
+        <h1>Let's begin</h1>
+        
+        <!-- Step 1: Centered text aligned with header -->
+        <div class="centered-content">
+            <p>First, go to <a href="https://takeout.google.com/" target="_blank">Google Takeout</a>.</p>
+        </div>
+
+        <!-- Step 2: Image with description -->
+        <div class="content">
+            <img src="image1.png" alt="Step 2" class="step-image">
+            <p>Next, click the "Deselect all" button to deselect everything from your Google account export options.</p>
+        </div>
+
+        <!-- Step 3: Image with description and note in the same paragraph -->
+        <div class="content">
+            <p>Select only YouTube and YouTube Music data and then click "Next Step" to continue.<br>
+            <strong>Note:</strong> The "YouTube and YouTube Music" option is near the bottom of the step 2 list.</p>
+            <img src="image2.png" alt="Step 3" class="step-image">
+        </div>
+
+        <!-- Step 4: Image with description -->
+        <div class="content">
+            <img src="image3.png" alt="Step 4" class="step-image">
+            <p>Finally, click the "Create export" button to start the process. You will receive an email once your export is ready to download.</p>
+        </div>
+
+        <p class="summary">The export process may take anywhere from a few minutes to several hours, depending on the amount of data in your YouTube account. Once you receive your export, click the "Get your YouTube Stats Now" button below to continue and upload your zip file.</p>
+        <button id="uploadButton">Get your YouTube Stats Now</button>
     </div>
 
     <script src="script.js"></script>
